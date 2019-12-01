@@ -1,0 +1,373 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "instruction_memory_adress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[9]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[12]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[13]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[14]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_adress[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_adress[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jump_sig",
+					"strict" : false
+				},
+				{
+					"name" : "bge",
+					"strict" : false
+				},
+				{
+					"name" : "alu_sig[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_mux",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_sig[0]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "beq",
+					"strict" : false
+				},
+				{
+					"name" : "instruction_memory_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "write_memory",
+					"strict" : false
+				},
+				{
+					"name" : "read_memory",
+					"strict" : false
+				},
+				{
+					"name" : "alu_sig[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_reg_sig[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_reg_sig[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "destiny_register[0]",
+					"strict" : false
+				},
+				{
+					"name" : "destiny_register[1]",
+					"strict" : false
+				},
+				{
+					"name" : "write_register",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_memory_in[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
