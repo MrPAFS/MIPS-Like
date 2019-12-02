@@ -1,0 +1,37 @@
+{C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MIPSLike
+-- Compiling architecture behavior of MIPSLike
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(77): (vcom-1136) Unknown identifier "bgez".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(78): Enumeration literal '0' is not of type (error).
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(79): Enumeration literal '1' is not of type (error).
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(88): (vcom-1136) Unknown identifier "alu_mux".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(89): Enumeration literal '0' is not of type (error).
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(90): Enumeration literal '1' is not of type (error).
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(120): (vcom-1136) Unknown identifier "bgez".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(120): (vcom-1136) Unknown identifier "beq".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(120): ** Error: (vcom-1590) Bad expression in left operand of infix expression 'or'.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(120): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'or'.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(120): Type error resolving infix expression "or" as type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(136): (vcom-1136) Unknown identifier "write_memory".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(136): Expression is not a signal.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(136): (vcom-1136) Unknown identifier "read_memory".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(136): Expression is not a signal.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(138): (vcom-1136) Unknown identifier "write_memory".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(138): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(141): (vcom-1136) Unknown identifier "read_memory".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(141): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(153): (vcom-1136) Unknown identifier "destiny_register".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(160): (vcom-1136) Unknown identifier "write_register".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(160): Expression is not a signal.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(162): (vcom-1136) Unknown identifier "write_register".
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(162): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(162): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/Casa/Desktop/Pedro/4 periodo/Arquitetura/Trabalho Final/MIPSLike.vhd(176): VHDL Compiler exiting
+
+} {10.0 36.0} {}}

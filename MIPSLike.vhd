@@ -13,16 +13,16 @@ entity MIPSLike is
 		data_memory_out : out std_logic_vector(15 downto 0);
 		
 		--Sinais de controle
-		destiny_register : in std_logic_vector(1 downto 0);
-		write_register : in std_logic;
-		alu_mux : in std_logic;
+		destiny_register_sig : in std_logic_vector(1 downto 0);
+		write_register_sig : in std_logic;
+		alu_mux_sig : in std_logic;
 		alu_sig : in std_logic_vector(2 downto 0);
 		shift_sig : in std_logic;
-		write_memory : in std_logic;
-		read_memory : in std_logic;
+		write_memory_sig : in std_logic;
+		read_memory_sig : in std_logic;
 		data_to_reg_sig : in std_logic_vector(1 downto 0);
-		bge : in std_logic;
-		beq : in std_logic;
+		bgez_sig : in std_logic;
+		beq_sig : in std_logic;
 		jump_sig : in std_logic;
 		
 		clock : in std_logic
@@ -73,7 +73,11 @@ begin
 	
 	--Dados de rs e rt
 	rs_data <= regs(conv_integer(unsigned(instruction_memory_in(11 downto 8))));
-	rt_data <= regs(conv_integer(unsigned(instruction_memory_in(7 downto 4))));
+	
+	with bgez_sig select
+		rt_data <= regs(conv_integer(unsigned(instruction_memory_in(7 downto 4)))) when '0',
+					  regs(0) when '1',
+					  (others => '-') when others;
 	
 	--Extensão de i
 	i_extended <= "00000000"&instruction_memory_in(7 downto 0);
@@ -81,9 +85,10 @@ begin
 	--leitura dos registradores e campo i
 	alu_a <= rs_data;
 	
-	with alu_mux select
+	with alu_mux_sig select
 		alu_b <= rt_data when  '0',
-					i_extended when '1';
+			i_extended when '1',
+			(others => '-') when others;
 					
 	--calculo do salto condicional
 	conditional_jump <= pc_plus2 + i_extended;
@@ -112,26 +117,28 @@ begin
 	end process if_1;
 	
 	--Conferir salto condicional
-	pc_font <= (bge and not N) or ((bge or beq) and Z);
+	pc_font <= (bgez_sig and not N) or (beq_sig and Z);
 	
 	--Calculo da próxima instrução
 	with pc_font select
 		jump_mux1 <= pc_plus2 when '0',
-						 conditional_jump when '1';
+						 conditional_jump when '1',
+						 (others => '-') when others;
 	with jump_sig select
 		jump_mux2 <= jump_mux1 when '0',
-						 jump when '1';
+						 jump when '1',
+						 (others => '-') when others;
 						 
 	--Calculo do deslocador
 	shift_out <= alu_out; -- Não sei como fazer ainda
 	
 	--Acesso à memória de dados (leitura ou escrita)
-	if_2 : process(write_memory, read_memory)
+	if_2 : process(write_memory_sig, read_memory_sig, shift_out, rt_data)
 	begin
-		if(write_memory = '1') then
+		if(write_memory_sig = '1') then
 			data_memory_adress <= shift_out;
 			data_memory_out <= rt_data;
-		elsif (read_memory = '1') then
+		elsif (read_memory_sig = '1') then
 			data_memory_adress <= shift_out;
 		end if;
 	end process if_2;
@@ -143,15 +150,16 @@ begin
 							shift_out when "10",
 							(others => '-') when others;
 	
-	with destiny_register select
+	with destiny_register_sig select
 		reg_to_write <= instruction_memory_in(7 downto 4) when "00",
-							 "0000" when "01",
-							 "0001" when "10",
-							 instruction_memory_in(3 downto 0) when "11";
+							 "0001" when "01",
+							 "0010" when "10",
+							 instruction_memory_in(3 downto 0) when "11",
+							 (others => '-') when others;
 							 
-	if_3 : process(clock, write_register, reg_to_write, data_to_reg)
+	if_3 : process(clock, write_register_sig, reg_to_write, data_to_reg)
 	begin
-		if(rising_edge(clock) and write_register = '1') then
+		if(rising_edge(clock) and write_register_sig = '1') then
 			regs(conv_integer(unsigned(reg_to_write))) <= data_to_reg;
 		end if;
 	end process if_3;
